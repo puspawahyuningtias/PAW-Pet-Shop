@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">PAW</string>
     <string name="logo">logo</string>
+    <string name="kategori">Kategori</string>
+    <string name="all_product">Semua Produk</string>
+    <string name="merek">Merek</string>
+    <string name="harga">Harga</string>
 </resources>
