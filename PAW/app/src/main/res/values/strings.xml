@@ -5,4 +5,5 @@
     <string name="all_product">Semua Produk</string>
     <string name="merek">Merek</string>
     <string name="harga">Harga</string>
+    <string name="deskripsi">Deskripsi</string>
 </resources>

@@ -40,6 +40,12 @@
             android:layout_marginBottom="5dp"
             android:textSize="16sp"
             android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_produk"/>
     </LinearLayout>
 
 </RelativeLayout>
