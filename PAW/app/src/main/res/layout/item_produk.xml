@@ -16,7 +16,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:contentDescription="@string/kategori"
+        android:contentDescription="@string/img_produk"
         android:src="@color/teal_700" />
 
     <LinearLayout

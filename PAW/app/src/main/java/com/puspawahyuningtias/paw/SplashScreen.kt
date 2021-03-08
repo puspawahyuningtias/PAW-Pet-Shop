@@ -12,7 +12,7 @@ class SplashScreen : Activity() {
         val timerThread: Thread = object : Thread() {
             override fun run() {
                 try {
-                    sleep(5000)
+                    sleep(3000)
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
                 } finally {
