@@ -29,13 +29,13 @@ class ListProdukAdapter(private val listProduk: ArrayList<Produk>, val context: 
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val produk = listProduk[position]
+        val harga = produk.harga
         Glide.with(holder.itemView.context)
             .load(produk.photo)
             .apply(RequestOptions().override(60, 60))
             .into(holder.imgPhotoProduk)
         holder.tvName.text = produk.name
         holder.tvDeskripsi.text = produk.deskripsi
-        val harga = produk.harga
         holder.tvHarga.text = "Rp. $harga"
         holder.itemView.setOnClickListener {
             val moveWithObjectIntent = Intent(context, DetailActivity::class.java)

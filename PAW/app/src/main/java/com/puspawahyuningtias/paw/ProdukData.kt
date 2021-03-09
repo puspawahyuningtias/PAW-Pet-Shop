@@ -3,7 +3,7 @@ package com.puspawahyuningtias.paw
 object ProdukData {
     private val namaProduk = arrayOf(
         "BOLT MAKANAN KUCING 1KG PREMIUM ORIGINAL",
-        "PET CARGO - PET CARRIER(BONUS TRAY) - KANDANG CARGO KUCING/ANJING",
+        "PET CARGO - PET CARRIER(BONUS TRAY) KUCING/ANJING",
         "Meo Creamy Treats isi 4 sachet",
         "Royal Canin Indoor Life Adult 3Kg - Makanan Anjing",
         "Shampoo Smoothiest anti kutu kucing anjing 250ml",
@@ -191,7 +191,7 @@ Pilihan size‼️"
 XS Lingkar dada 43 - 48 cm
    Lingkar leher 39 - 42 cm
 
- S  Lingkar dada 47 - 56 cm 
+S  Lingkar dada 47 - 56 cm 
     Lingkar leher 41 - 47 cm
 
 M  Lingkar dada 54 - 67 cm

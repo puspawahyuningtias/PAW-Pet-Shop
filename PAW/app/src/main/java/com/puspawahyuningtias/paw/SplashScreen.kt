@@ -23,7 +23,7 @@ class SplashScreen : Activity() {
         }
         timerThread.start()
     }
-    override fun onPause() { // TODO Auto-generated method stub
+    override fun onPause() {
         super.onPause()
         finish()
     }

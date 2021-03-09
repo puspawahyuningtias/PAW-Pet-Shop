@@ -25,14 +25,17 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
         setSupportActionBar(findViewById(R.id.toolbar))
+
         val produk by getParcelableExtra<Produk>(EXTRA_MYDATA)
+
         supportActionBar?.title = produk?.name.toString()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        tv_detail_description.text = produk?.deskripsi.toString()
-        tv_kategori.text = produk?.kategori.toString()
+
         val harga = produk?.harga.toString()
         tv_harga.text = "Rp. $harga"
         tv_jenis.text = produk?.jenis.toString()
+        tv_kategori.text = produk?.kategori.toString()
+        tv_detail_description.text = produk?.deskripsi.toString()
         Glide.with(this)
             .load(produk?.photo.toString())
             .apply(RequestOptions().override(700, 700))

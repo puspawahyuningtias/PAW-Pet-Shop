@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         rvProduk = findViewById(R.id.rv_produk)
         rvProduk.setHasFixedSize(true)
 
