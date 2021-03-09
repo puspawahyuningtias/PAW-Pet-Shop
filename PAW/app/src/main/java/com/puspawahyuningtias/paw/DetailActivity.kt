@@ -1,5 +1,6 @@
 package com.puspawahyuningtias.paw
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.Bundle
 import android.os.Parcelable
@@ -19,6 +20,7 @@ class DetailActivity : AppCompatActivity() {
     inline fun <reified T : Parcelable> Activity.getParcelableExtra(key: String) = lazy {
         intent.getParcelableExtra<T>(key)
     }
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
@@ -28,6 +30,8 @@ class DetailActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         tv_detail_description.text = produk?.deskripsi.toString()
         tv_kategori.text = produk?.kategori.toString()
+        val harga = produk?.harga.toString()
+        tv_harga.text = "Rp. $harga"
         tv_jenis.text = produk?.jenis.toString()
         Glide.with(this)
             .load(produk?.photo.toString())
