@@ -8,7 +8,7 @@ data class Produk(
     var name: String = "",
     var harga: String = "",
     var deskripsi: String = "",
-    var photo: Int = 0,
+    var photo: String = "",
     var kategori: String = "",
     var jenis: String = ""
 ): Parcelable

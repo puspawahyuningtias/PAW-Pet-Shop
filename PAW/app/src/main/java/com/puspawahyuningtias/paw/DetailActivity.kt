@@ -30,7 +30,7 @@ class DetailActivity : AppCompatActivity() {
         tv_kategori.text = produk?.kategori.toString()
         tv_jenis.text = produk?.jenis.toString()
         Glide.with(this)
-            .load(produk?.photo)
+            .load(produk?.photo.toString())
             .apply(RequestOptions().override(700, 700))
             .into(iv_detail_photo_produk)
     }
