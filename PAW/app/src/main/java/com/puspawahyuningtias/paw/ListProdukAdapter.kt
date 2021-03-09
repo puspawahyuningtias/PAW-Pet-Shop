@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
-class ListProdukAdapter(private val listProduk: ArrayList<Produk>, val context: Context):
+class ListProdukAdapter(private val listProduk: ArrayList<Produk>, private val context: Context):
     RecyclerView.Adapter<ListProdukAdapter.ListViewHolder>() {
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var tvName: TextView = itemView.findViewById(R.id.tv_merek)
