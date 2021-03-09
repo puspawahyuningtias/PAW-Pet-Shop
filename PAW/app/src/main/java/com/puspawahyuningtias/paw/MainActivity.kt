@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun showRecyclerList() {
         rvProduk.layoutManager = LinearLayoutManager(this)
-        val listProdukAdapter = ListProdukAdapter(listProduk)
+        val listProdukAdapter = ListProdukAdapter(listProduk, this@MainActivity)
         rvProduk.adapter = listProdukAdapter
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

@@ -1,6 +1,8 @@
 package com.puspawahyuningtias.paw
 
 import android.annotation.SuppressLint
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
-class ListProdukAdapter(private val listProduk: ArrayList<Produk>):
+class ListProdukAdapter(private val listProduk: ArrayList<Produk>, val context: Context):
     RecyclerView.Adapter<ListProdukAdapter.ListViewHolder>() {
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var tvName: TextView = itemView.findViewById(R.id.tv_merek)
@@ -35,6 +37,11 @@ class ListProdukAdapter(private val listProduk: ArrayList<Produk>):
         holder.tvDeskripsi.text = produk.deskripsi
         val harga = produk.harga
         holder.tvHarga.text = "Rp. $harga"
+        holder.itemView.setOnClickListener {
+            val moveWithObjectIntent = Intent(context, DetailActivity::class.java)
+            moveWithObjectIntent.putExtra(DetailActivity.EXTRA_MYDATA, produk)
+            context.startActivity(moveWithObjectIntent)
+        }
     }
 
     override fun getItemCount(): Int {
